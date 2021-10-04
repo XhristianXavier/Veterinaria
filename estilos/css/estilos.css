@@ -122,6 +122,7 @@ body {
 .banner {
   background-image: url("../../img/banner.jpeg");
   background-size: cover;
+  background-position: 50%;
   height: 32rem;
   position: relative;
   z-index: 10; }
