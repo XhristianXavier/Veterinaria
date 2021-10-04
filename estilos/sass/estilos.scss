@@ -56,7 +56,7 @@ body{
     right: 0;
     left: 0;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     width:100%;
     font-weight:600;
     transition: transform .5s ease;
@@ -96,7 +96,7 @@ body{
     li{
         margin:0;
         padding-bottom:0;
-        padding-right:1rem;
+        padding-right:1.5rem;
         border-bottom:none;
         &:last-of-type{
             padding-right:0;
@@ -127,8 +127,8 @@ body{
 
 .menu-burguer{
     a{
-        width:1.6rem;
-        height:1.6rem;
+        width:1.4rem;
+        height:1.4rem;
         display:inline-block;
     }
     img{
