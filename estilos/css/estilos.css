@@ -234,12 +234,12 @@ body {
 .recognition {
   margin-top: 3rem;
   background-color: #efefef; }
-  .recognition .wrapper {
+  .recognition .wrapper-recognition {
     width: 95%;
     margin-left: auto;
     margin-right: auto; }
     @media screen and (min-width: 1024px) {
-      .recognition .wrapper {
+      .recognition .wrapper-recognition {
         width: 80%; } }
   .recognition .card {
     display: flex;
