@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+//Variables
+
+
+body{
+    font-family:'roboto',sans-serif;
+}
+
+//wrapper 
+.wrapper{
+    width:calc(100% - 4rem);
+    margin-left:2rem;
+    margin-right:2rem;
+    max-width:1150px;
+    @media screen and (min-width:1024px){
+        width:95%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+//Header
+@import './header.scss';
+.banner{
+    background-image:url('../../img/banner_contact_us.jpg');
+    background-size:cover;
+    background-position:50%;
+    height:15rem;
+    position:relative;
+    z-index:10;
+}
+.request-appoiment{
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,-50%);
+    top: 50%;
+    color: #fff;
+    font-size: 2.3rem;
+    text-align: center;
+    //width: rem;
+    z-index:20;
+    display:flex;
+    flex-direction:column;
+    @media screen and (min-width:1024px){
+        width:100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .btn__request-appoiment{
+        margin-top:1.2rem;
+        padding:1rem 2rem;
+        color:#fff;
+        background-color:rgb(11, 96, 192);
+        text-decoration: none;
+        display:inline-block;
+        font-size:1.2rem;
+        @media screen and (min-width:1024px){
+            margin-top:0;
+        }
+    }
+}
+
+//Home
+.home{
+    margin-top:3rem;
+    text-align:center;
+    .grid{
+     display:grid;
+     grid-template-columns:1fr;
+     @media screen and (min-width:768px){
+        grid-template-columns:repeat(2,1fr);
+     }
+    }
+    .card{
+
+        .img__card{
+            flex:0 1 auto;
+            height:20rem;
+            img{
+                width:100%;
+                height:100%;
+                object-fit:cover;
+            }
+        }
+    }
+}
+.title-contact-us{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color:rgb(11, 96, 192);
+}
+
+
+//send-email
+.send-email{
+    margin-top:5rem;
+    background-color:rgb(11, 96, 192);
+    .wrapper{
+        padding-top:2.5rem;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns:1fr;
+        //row-gap:3rem;
+        @media screen and (min-width:1024px){
+            grid-template-columns:repeat(2,1fr);
+            column-gap:2rem;
+         }
+    }
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    row-gap:1.6rem;
+    .title__form{
+        text-align:center;
+        color:#fff;
+        font-size:1.6rem;
+        font-weight:400;
+        @media screen and (min-width:1024px){
+            text-align:left;
+        }
+    }
+    .name__form,.email__form{
+        position:relative;
+        label{
+            position:absolute;
+            color:#fff;
+            top:50%;
+            transform:translate(0%,-50%);
+            left:3%;
+            font-size:1.2rem;
+        }
+        input[type="text"]{
+            position:relative;
+            padding:1.5rem 1rem .6rem;
+            width:100%;
+            background-color:#08478f;
+            outline:none;
+            border:none;
+            font-size:1rem;
+            color:#fff;
+            transition:top 4s ease-in-out 1s;
+            &:focus{
+                outline:1px solid #fff;
+                + label{
+                    font-size:.8rem;
+                    top:30%;
+                    
+                }
+               }
+        }
+
+    }
+    .message__form{
+        textarea{
+            height:15rem;
+            width:100%;
+            padding:.9rem .5rem;
+            background-color:#08478f;
+            color:#fff;
+            outline:none;
+            border:none;
+            resize: none;
+            font-size:1rem;
+            &:focus{
+                outline:1px solid #fff;
+               }
+            &::placeholder{
+                color:#fff;
+            }
+        }
+    }
+    .btn__form{
+        display:block;
+        color:#000;
+        background-color:#fff;
+        text-decoration:none;
+        font-size:1.2rem;
+        padding:1rem .5rem;
+        text-align:center;
+    }
+    .recaptcha__form{
+        color:#fff;
+        text-align:center;
+        font-size:.8rem;
+    }
+}
+ .info-about{
+    text-align:center;
+    color:#fff;
+    .title-info-about{
+        margin-top:2.5rem;
+        // &.second{
+        //     margin-top:2rem;
+        // }
+    }
+    .welcome-info-about,.address-info-about,.number-info-about,.hours-info-about{
+        margin-top:1.6rem;
+    }
+    @media screen and (min-width:1024px){
+        text-align:left;
+    }
+}
+@import './footer.scss';
