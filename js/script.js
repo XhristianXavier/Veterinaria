@@ -1,3 +1,12 @@
+window.addEventListener('scroll',(e)=>{
+    let menu = document.querySelector('#header');
+    if(window.pageYOffset>0){
+      menu.classList.add("header-shadow");
+    }else{
+      menu.classList.remove("header-shadow");
+    }
+  });
+  
 //Menu header
 document.querySelector('#linkMenuBurguer').addEventListener('click',(e)=>{
     document.querySelector('#menu').classList.add('show-menu');
@@ -5,6 +14,7 @@ document.querySelector('#linkMenuBurguer').addEventListener('click',(e)=>{
 document.querySelector('#closeMenu').addEventListener('click',(e)=>{
     document.querySelector('#menu').classList.remove('show-menu');
 });
+
 
 //Conctact Us
 const inputs = document.querySelectorAll('#inputNameForm, #inputEmailForm');
