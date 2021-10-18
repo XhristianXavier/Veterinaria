@@ -137,6 +137,7 @@ body{
             transform:translate(0%,-50%);
             left:3%;
             font-size:1.2rem;
+            transition:font-size .25s ease 0s;
         }
         input[type="text"]{
             position:relative;
@@ -147,12 +148,13 @@ body{
             border:none;
             font-size:1rem;
             color:#fff;
-            transition:top 4s ease-in-out 1s;
+            
             &:focus{
                 outline:1px solid #fff;
                 + label{
                     font-size:.8rem;
                     top:30%;
+                    
                     
                 }
                }
