@@ -29,7 +29,7 @@ body{
     background-image:url('../../img/banner.jpeg');
     background-size:cover;
     background-position:50%;
-    height:32rem;
+    height:32rem; 
     position:relative;
     z-index:10;
     &::after{
@@ -231,7 +231,6 @@ body{
         display:flex;
         flex-direction:column;
         position:relative;
-        flex: 0 1 50%;
         .img__card{
             flex: 0 1 auto;
             height: 30rem;
@@ -267,6 +266,9 @@ body{
         left:0;
         z-index:10;
         background-color:rgba(0, 0, 0, 0.4);
+    }
+    @media screen and (min-width:1024px){
+        flex: 0 1 50%; 
     }
     }
 }
