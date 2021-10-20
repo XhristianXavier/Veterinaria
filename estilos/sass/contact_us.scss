@@ -92,9 +92,12 @@ body{
 .title-contact-us{
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 400;
     color:rgb(11, 96, 192);
+    @media screen and (min-width:1024px){
+        font-size:2.5rem;
+    }
 }
 
 
@@ -226,9 +229,12 @@ body{
     .title-emergency{
         text-align: center;
         margin-bottom: 3rem;
-        font-size: 2.5rem;
-        font-weight:500;
+        font-size: 2rem;
+        font-weight:400;
         color: #0b60c0;
+        @media screen and (min-width:1024px){
+            font-size:2.5rem;
+        }
         }
     .grid{
     display:flex;
