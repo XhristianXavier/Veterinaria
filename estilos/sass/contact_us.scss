@@ -122,16 +122,16 @@ body{
     display:flex;
     flex-direction:column;
     row-gap:1.6rem;
-    .title__form{
+    .title__form{ 
         text-align:center;
         color:#fff;
         font-size:1.6rem;
         font-weight:400;
         @media screen and (min-width:1024px){
             text-align:left;
-        }
+        } 
     }
-    .name__form,.email__form{
+    .name__form,.email__form{ 
         position:relative;
         label{
             position:absolute;
@@ -261,7 +261,7 @@ body{
         }
         .paragraph__card{
             text-align:center;
-            width:20rem;
+            width:80%;
             color:#fff;
             position:absolute;
             top:50%;
@@ -337,4 +337,4 @@ margin-top:5rem;
 
 .footer{
     margin-top:5rem;
-}
+} 
