@@ -14,8 +14,24 @@ document.querySelector('#linkMenuBurguer').addEventListener('click',(e)=>{
 document.querySelector('#closeMenu').addEventListener('click',(e)=>{
     document.querySelector('#menu').classList.remove('show-menu');
 });
+document.querySelector('#showListHour').addEventListener('click',(e)=>{
+    document.querySelector('#listHours').classList.toggle('show-list-hours');
+        if(document.querySelector('#listHours').classList.contains('show-list-hours')){
+            document.querySelector('#todayHour').style.display = 'none';
+            document.querySelector('#showListHour img').src = '/img/up-arrow.png';
+        }
+        else{
+            document.querySelector('#todayHour').style.display = 'block';
+            document.querySelector('#showListHour img').src = '/img/down-arrow.png'
+        }
+})
 
-
+const linksHours = document.querySelectorAll('#listHours li a');
+for(let i =0; i < linksHours.length;i++){
+    linksHours[i].addEventListener('click', (e)=>{
+        e.defaultPrevented;
+    })
+}
 //Conctact Us
 const inputs = document.querySelectorAll('#inputNameForm, #inputEmailForm');
 
@@ -24,7 +40,6 @@ for(let i= 0; i < inputs.length; i++){
         let input = e.target;
         let parent = input.closest('div');
         //console.log('INPUT LENGTH: ', input.value.length);
-        console.log('PARENT:', parent);
         let label  = parent.querySelector('label');
         if(input.value.length > 0){
             label.style.fontSize = '.8rem';
