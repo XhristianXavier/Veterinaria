@@ -18,11 +18,11 @@ document.querySelector('#showListHour').addEventListener('click',(e)=>{
     document.querySelector('#listHours').classList.toggle('show-list-hours');
         if(document.querySelector('#listHours').classList.contains('show-list-hours')){
             document.querySelector('#todayHour').style.display = 'none';
-            document.querySelector('#showListHour img').src = '/img/up-arrow.png';
+            document.querySelector('#showListHour img').src = './img/up-arrow.png';
         }
         else{
             document.querySelector('#todayHour').style.display = 'block';
-            document.querySelector('#showListHour img').src = '/img/down-arrow.png'
+            document.querySelector('#showListHour img').src = './img/down-arrow.png'
         }
 })
 
