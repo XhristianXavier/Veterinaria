@@ -103,37 +103,37 @@ body{
         row-gap:4.5rem;
     }
     .card{
-        display:flex;
+        display:flex; 
         flex-direction:column;
-        row-gap:1.5rem;
-        align-items:center;
-            @media screen and (min-width:1024px){
-            flex-direction:row;
+        row-gap:1.5rem;   
+        align-items:center; 
+            @media screen and (min-width:1024px){  
+            flex-direction:row;  
             column-gap:2rem;
-            align-items:initial;
-            }
-            &.second{
-                img{
+            align-items:initial; 
+            } 
+            &.second{ 
+                img{ 
                     object-position: top;
-                }
+                } 
             @media screen and (min-width:1024px){
-                flex-direction:row-reverse;
+                flex-direction:row-reverse; 
              }
-            }
+            }  
     }
-    .img__card{
+    .img__card{  
             flex:0 1 auto;
-            height: 18rem;
-            img{
-                width:100%;
-                height:100%;
-                object-fit:cover;
+            height: 18rem; 
+            img{  
+                width:100%;  
+                height:100%; 
+                object-fit:cover; 
             }
             @media screen and (min-width:1024px){
                 flex:0 1 50%; 
             }
     }
-    .info__card{
+    .info__card{ 
         flex: 0 1 50%;
         display:flex;
         flex-direction:column;

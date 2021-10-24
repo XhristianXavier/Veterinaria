@@ -6,7 +6,6 @@ window.addEventListener('scroll',(e)=>{
       menu.classList.remove("header-shadow");
     }
   });
-  
 //Menu header
 document.querySelector('#linkMenuBurguer').addEventListener('click',(e)=>{
     document.querySelector('#menu').classList.add('show-menu');
@@ -14,6 +13,21 @@ document.querySelector('#linkMenuBurguer').addEventListener('click',(e)=>{
 document.querySelector('#closeMenu').addEventListener('click',(e)=>{
     document.querySelector('#menu').classList.remove('show-menu');
 });
+
+
+
+document.querySelector('#moreId').addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.querySelector('#listMoreMenu').classList.toggle('show-more-menu');
+    if(document.querySelector('#listMoreMenu').classList.contains('show-more-menu')){
+        document.querySelector('#moreId img').src = './img/up-arrow.png';
+    }
+    else{
+        document.querySelector('#moreId img').src = './img/down-arrow.png'
+    }
+})
+
+//List hours
 document.querySelector('#showListHour').addEventListener('click',(e)=>{
     document.querySelector('#listHours').classList.toggle('show-list-hours');
         if(document.querySelector('#listHours').classList.contains('show-list-hours')){
@@ -29,9 +43,13 @@ document.querySelector('#showListHour').addEventListener('click',(e)=>{
 const linksHours = document.querySelectorAll('#listHours li a');
 for(let i =0; i < linksHours.length;i++){
     linksHours[i].addEventListener('click', (e)=>{
-        e.defaultPrevented;
+        e.preventDefault();
     })
 }
+
+
+
+
 //Conctact Us
 const inputs = document.querySelectorAll('#inputNameForm, #inputEmailForm');
 

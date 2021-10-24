@@ -47,6 +47,10 @@
  ul{
      width:inherit;
      list-style-type:none;
+     overflow-y:auto;
+     @media screen and (min-width:1024px){
+         overflow-y:initial;
+     }
      a{ 
         text-decoration:none;
         font-size:1.4rem;
@@ -109,9 +113,9 @@
         padding-bottom:0;
         padding-right:1.5rem;
         border-bottom:none;
-        &:last-of-type{
+/*         &:last-of-type{
             padding-right:0;
-        }
+        } */
         &:nth-of-type(4){
             display:none;
         }
@@ -135,6 +139,62 @@
 
     @media screen and (min-width:1024px){
         position:static;
+        display:none;
+    }
+}
+.li-more-menu{
+    display:none;
+    @media screen and  (min-width:1024px){
+        display:block;
+        padding-right:0;
+    }
+}
+.more-menu{
+    position:relative;
+    .more{
+        display:flex;
+        column-gap:.5rem;
+        img{
+            width:.8rem;
+            align-self:center;
+            display:inline-block;
+            display:block;
+        }
+    } 
+    .list-more-menu{
+        width:max-content; 
+        position:absolute;
+        top: 135%;
+        right:0;
+        background-color: #0b60c0;
+        box-shadow: 0 3px 6px 3px #00234a8c;
+        list-style-type: none;
+        li{
+            padding: 1.5rem 1.2rem;
+            a{
+                text-decoration:none;
+                color:#fff;
+            } 
+        }
+    }
+    .show-more-menu{
+        display:flex;
+        flex-direction:column;
+    }
+}
+.list-more-menu{ 
+    display:none;
+    li{
+      &:nth-of-type(1){
+          display:block;
+          @media screen and (min-width:1280px){
+            display:none;
+          }
+      }  
+    }
+} 
+.li-Testimony-menu{
+    @media screen and (min-width:1024px){
         display:none;
     }
 }
